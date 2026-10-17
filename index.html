@@ -3,11 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
+<title>Hyperspace Corridor Sim</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="app">
-  <canvas id="c"></canvas>
+	<div id="stage">
+		<canvas id="c"></canvas>
+		<div id="hud">
+			<div class="gauge"><span class="k">HULL</span><div class="track"><i id="g-hull"></i></div><span class="v" id="v-hull">100</span></div>
+			<div class="gauge"><span class="k">ENERGY</span><div class="track"><i id="g-energy"></i></div><span class="v" id="v-energy">100</span></div>
+			<div class="gauge"><span class="k">MIND</span><div class="track"><i id="g-psy"></i></div><span class="v" id="v-psy">0</span></div>
+			<div id="readout"></div>
+		</div>
+		<div id="status"></div>
+	</div>
+
+	<aside id="panel">
+		<h1>HYPERSPACE CORRIDOR</h1>
+		<p class="sub">path finding difficulty lab - two gates, one medium, many ways to get lost</p>
+
+		<h2>Transport modes</h2>
+		<label class="row"><input type="checkbox" id="m-noise" checked> Noise drift (heightmap)</label>
+		<label class="row"><input type="checkbox" id="m-curl" checked> Curl turbulence</label>
+		<label class="row"><input type="checkbox" id="m-guide" checked> Guide channel</label>
+		<label class="row"><input type="checkbox" id="m-beacons" checked> Gate beacons</label>
+		<label class="row"><input type="checkbox" id="m-gas"> Gas pressure transport</label>
+		<label class="row"><input type="checkbox" id="m-tracers" checked> Tracer particles</label>
+
+		<h2>Medium</h2>
+		<div id="sliders"></div>
+
+		<h2>Gates</h2>
+		<div id="gates"></div>
+
+		<h2>Trials</h2>
+		<button class="primary" id="b-trials">Run trials</button>
+		<button id="b-reset">Restart flight</button>
+		<button id="b-seed">New sector (seed)</button>
+		<div id="trial-out"></div>
+
+		<h2>Controls</h2>
+		<p class="keys"><b>W</b>/<b>S</b> main engines &nbsp; <b>A</b>/<b>D</b> turn &nbsp; <b>space</b> brake &nbsp; <b>shift</b> full burn</p>
+		<p class="note">Enter the exit gate slowly and straight ahead - a fast or crooked entry is deflected. Leaving the guide channel is where hulls and minds get lost.</p>
+	</aside>
 </div>
+
+<script src="src/rng.js"></script>
+<script src="src/noise.js"></script>
+<script src="src/field.js"></script>
+<script src="src/flow.js"></script>
+<script src="src/sim.js"></script>
+<script src="src/autopilot.js"></script>
+<script src="src/stats.js"></script>
+<script src="src/render.js"></script>
+<script src="src/ui.js"></script>
+<script src="src/main.js"></script>
 </body>
 </html>

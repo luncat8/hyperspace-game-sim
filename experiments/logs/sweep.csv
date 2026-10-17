@@ -1,0 +1,126 @@
+# 2026-10-17-11-52-18
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.75,8.82,61.4,1.144,58.2,0,0.57,1
+analytic no guide,12,1000,0,0,0,0.714,0,0,0.025,12
+analytic no beacons,12,1000,0.833,10.61,83.2,1.075,54.2,0,0.57,0
+analytic no noise,12,1000,0.833,12.63,64.7,1.137,54.1,0,0.565,0
+analytic no curl,12,1000,0.75,9.63,70.9,1.164,53.4,0,0.61,0
+gas + guide,12,1000,0.917,12.67,77.5,0.986,53.6,0,0.18,1
+gas no guide,12,1000,0,0,0,0.395,0,0,0.023,12
+# 2026-10-17-11-53-42
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.75,8.82,61.4,1.144,58.2,0,0.57,1
+analytic no guide,12,1000,0,0,0,0.714,0,0,0.025,12
+analytic no beacons,12,1000,0.833,10.61,83.2,1.075,54.2,0,0.57,0
+analytic no noise,12,1000,0.833,12.63,64.7,1.137,54.1,0,0.565,0
+analytic no curl,12,1000,0.75,9.63,70.9,1.164,53.4,0,0.61,0
+gas + guide,12,1000,0.917,12.67,77.5,0.979,53.6,0,0.192,1
+gas no guide,12,1000,0,0,0,0.403,0,0,0.026,12
+# 2026-10-17-11-54-47
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.667,9.58,62.1,1.193,61.9,0,0.614,1
+analytic no guide,12,1000,0,0,0,0.768,0,0,0.013,12
+analytic no beacons,12,1000,1,10.91,88,0.953,48.5,0,0.499,0
+analytic no noise,12,1000,0.833,9.54,71.8,1.077,55.6,0,0.561,0
+analytic no curl,12,1000,0.833,13.42,68.2,1.101,51.1,0,0.614,1
+gas + guide,12,1000,1,12.28,84.7,0.949,48.3,0,0.184,0
+gas no guide,12,1000,0,0,0,0.403,0,0,0.026,12
+# 2026-10-17-11-56-01
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.667,9.58,67.7,1.244,61.9,0,0.62,0
+analytic no guide,12,1000,0,0,1.4,1.446,0,0,0.038,11
+analytic no beacons,12,1000,1,10.91,90.8,0.953,48.5,0,0.499,0
+analytic no noise,12,1000,0.833,9.55,73.7,1.078,55.8,0,0.561,0
+analytic no curl,12,1000,0.833,17.85,73.6,1.162,51.1,0,0.622,0
+gas + guide,12,1000,1,12.28,87.7,0.949,48.3,0,0.184,0
+gas no guide,12,1000,0,0,5.4,0.657,0,0,0.038,11
+# 2026-10-17-11-57-15
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.667,9.58,67.7,1.244,61.9,0,0.62,0
+analytic no guide,12,1000,0.417,15.26,72.4,1.217,0,0,0.056,0
+analytic no beacons,12,1000,1,10.91,90.8,0.953,48.5,0,0.499,0
+analytic no noise,12,1000,0.833,9.55,73.7,1.078,55.8,0,0.561,0
+analytic no curl,12,1000,0.833,17.85,73.6,1.162,51.1,0,0.622,0
+gas + guide,12,1000,1,12.28,87.7,0.949,48.3,0,0.184,0
+gas no guide,12,1000,0.167,22.03,85.9,0.795,0,0,0.065,0
+# 2026-10-17-11-58-32
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.667,9.58,67.7,1.244,61.9,0,0.62,0
+analytic no guide,12,1000,0.417,15.26,72.4,1.217,0,0,0.056,0
+analytic no beacons,12,1000,1,10.91,90.8,0.953,48.5,0,0.499,0
+analytic no noise,12,1000,0.833,9.55,73.7,1.078,55.8,0,0.561,0
+analytic no curl,12,1000,0.833,17.85,73.6,1.162,51.1,0,0.622,0
+gas + guide,12,1000,1,12.28,87.7,0.949,48.3,0,0,0
+gas no guide,12,1000,0.167,21.94,85.1,0.82,0,0,0,0
+# 2026-10-17-12-00-58
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.667,9.58,67.7,1.244,61.9,0,0.62,0
+analytic no guide,12,1000,0.417,15.26,72.4,1.217,0,0,0.056,0
+analytic no beacons,12,1000,1,10.91,90.8,0.953,48.5,0,0.499,0
+analytic no noise,12,1000,0.833,9.55,73.7,1.078,55.8,0,0.561,0
+analytic no curl,12,1000,0.833,17.85,73.6,1.162,51.1,0,0.622,0
+gas + guide,12,1000,0.5,6.81,69.7,1.279,74.4,0,0.459,0
+gas no guide,12,1000,0.083,9.3,66,1.211,0,0,0.648,1
+# 2026-10-17-12-02-15
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.667,9.6,78.3,1.245,59.8,0,0.62,0
+analytic no guide,12,1000,0.417,14.82,72.4,1.169,0,0,0.054,1
+analytic no beacons,12,1000,1,10.32,98.9,0.94,48.5,0,0.499,0
+analytic no noise,12,1000,0.833,9.86,82.2,1.081,56.3,0,0.568,0
+analytic no curl,12,1000,0.833,11.13,82.5,1.114,51.3,0,0.599,0
+gas + guide,12,1000,0.5,6.82,79.4,1.259,74.1,0,0.459,0
+gas no guide,12,1000,0.083,9.3,67.6,1.247,0,0,0.647,2
+# 2026-10-17-12-03-12
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,0.917,10.39,82.3,1.034,50.4,0,0.534,0
+analytic no guide,12,1000,0.833,14.05,76.6,0.995,0,0,0.024,1
+analytic no beacons,12,1000,1,12.35,98.9,0.929,54,0,0.5,0
+analytic no noise,12,1000,0.917,10.29,78.6,0.955,49,0,0.525,1
+analytic no curl,12,1000,1,10.57,86.8,0.954,51.6,0,0.545,0
+gas + guide,12,1000,0.75,9.27,77.4,1.147,53.6,0,0.241,0
+gas no guide,12,1000,0.833,11.62,85.9,1.033,0,0,0.325,1
+# 2026-10-17-12-04-07
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,1,9.56,80.7,0.966,55.6,0,0.423,0
+analytic no guide,12,1000,0.667,16.58,83.8,1.11,0,0,0.06,0
+analytic no beacons,12,1000,0.917,11.45,96.8,1.003,60.6,0,0.532,0
+analytic no noise,12,1000,0.917,9.45,82.1,1.011,53.9,0,0.47,0
+analytic no curl,12,1000,0.833,10.01,84.8,1.075,59.4,0,0.448,0
+gas + guide,12,1000,0.667,8.46,82.4,1.159,66.5,0,0.298,0
+gas no guide,12,1000,0.833,11.25,91.5,1.001,0,0,0.286,0
+# 2026-10-17-12-05-06
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,12,1000,1,9.56,80.7,0.966,55.6,0,0.423,0
+analytic no guide,12,1000,0.667,16.58,83.8,1.11,0,0,0.06,0
+analytic no beacons,12,1000,0.917,11.45,96.8,1.003,60.6,0,0.532,0
+analytic no noise,12,1000,0.917,9.45,82.1,1.011,53.9,0,0.47,0
+analytic no curl,12,1000,0.833,10.01,84.8,1.075,59.4,0,0.448,0
+gas + guide,12,1000,0.667,8.46,82.4,1.159,66.5,0,0.292,0
+gas no guide,12,1000,0.833,11.25,91.6,1.003,0,0,0.176,0
+# 2026-10-17-12-08-11
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,16,1000,0.938,9.55,81.7,1.001,0,0,0.824,0
+analytic no guide,16,1000,0.688,15.96,85.4,1.093,0,0,0.053,0
+analytic no beacons,16,1000,0.938,11.48,97.1,0.989,0,0,0.83,0
+analytic no noise,16,1000,0.875,9.46,82.6,1.036,0,0,0.853,0
+analytic no curl,16,1000,0.813,9.91,84.9,1.086,0,0,0.872,0
+gas + guide,16,1000,0.75,8.46,84.4,1.105,0,0,0.75,0
+gas no guide,16,1000,0.875,11.26,92.2,0.986,0,0,0.721,0
+# 2026-10-17-12-16-25
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,24,4242,0.792,9.61,80.5,1.098,54.8,0,0.875,0
+analytic no guide,24,4242,0.458,16.77,84.2,1.166,0,0,0.053,0
+analytic no beacons,24,4242,1,11.34,97.5,0.932,37.9,0,0.833,0
+analytic no noise,24,4242,0.958,9.92,82.9,0.99,47.3,0,0.88,0
+analytic no curl,24,4242,0.792,9.58,84.8,1.09,51,0,0.875,0
+gas + guide,24,4242,0.75,8.5,83.2,1.084,59.4,0,0.75,1
+gas no guide,24,4242,0.792,11.54,85.4,1.096,0,0,0.718,0
+# 2026-10-17-12-22-27
+config,runs,seed,successRate,meanTime,meanHull,meanDetour,meanDeviation,meanReentries,tracerRate,destroyed
+analytic + guide,8,777,0.875,9.74,81.9,1.036,60.7,0,0.418,0
+analytic no guide,8,777,0.375,21.99,87.1,1.093,0,0,0.19,0
+analytic no beacons,8,777,1,11.36,97.6,0.933,47.1,0,0.833,0
+analytic no noise,8,777,0.75,9.69,82.9,1.135,58.1,0,0.875,0
+analytic no curl,8,777,0.875,9.69,84.5,1.037,52.9,0,0.326,0
+gas + guide,8,777,0.625,8.42,78.2,1.191,63.7,0,0.75,0
+gas no guide,8,777,0.75,11.31,80.5,0.958,0,0,0.734,1
