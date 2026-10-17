@@ -18,6 +18,23 @@ implement modes (checkboxes):
 - guide line or curve between gates. this is stable path (like valley on heightmap) more distance from line = more environment force apply to ship
 - other (think about good game mechanics).
 
+
+
+2d
+generate simplex-like noise - gradient of this map push ship, like heightmap
+
+apply curl - this is second force that pull ship along same potential (curl) level.
+
+
+hyper gate enter and exit add source and sink (high and low on heightmap).
+
+ensure particles launched from enter gate will reach to exit - so there is natural path defined by gradient of noise + slope to exit sink gate.
+Alternate way - you can simulate it as pressure of gas  - this looks more robust because automatically ensure particle reach sink despite of heightmap just because pressure finally push it here
+
+enter gate (source) spawn such particles - this is in game the beacons that lead space ship between gates.
+
+
+
 ## this repo
 
 https://github.com/luncat8/hyperspace-game-sim.git
