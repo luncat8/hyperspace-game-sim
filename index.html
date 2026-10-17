@@ -3,11 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
+<title>hyperspace-game-sim</title>
+<style>
+	html, body { margin: 0; height: 100%; overflow: hidden; background: #070a12; }
+	#c { display: block; }
+	#panel {
+		position: fixed; top: 10px; left: 10px; padding: 10px 12px;
+		background: rgba(10, 14, 24, 0.85); border: 1px solid #27324a; border-radius: 6px;
+		color: #cfd8ea; font: 12px monospace; user-select: none;
+	}
+	#panel label { display: block; margin: 3px 0; }
+	#panel input[type=range] { width: 110px; vertical-align: middle; }
+	#panel input[type=number] { width: 70px; background: #141a2a; color: #cfd8ea; border: 1px solid #27324a; }
+	#panel button { background: #1d2740; color: #cfd8ea; border: 1px solid #27324a; cursor: pointer; }
+	#panel .help { margin-top: 6px; color: #8fa0bd; max-width: 230px; }
+	#panel .sect { margin-top: 8px; color: #8fa0bd; }
+</style>
 </head>
 <body>
-<div id="app">
-  <canvas id="c"></canvas>
+<canvas id="c"></canvas>
+<div id="panel">
+	<div class="sect">modes</div>
+	<label><input type="checkbox" id="modeBeacons" checked> gate beacons (calm cones)</label>
+	<label><input type="checkbox" id="modeGuide"> guide curve (stable valley)</label>
+	<label><input type="checkbox" id="modeBuoys"> stabilizer buoys (Space)</label>
+	<div class="sect">tuning</div>
+	<label>turbulence <input type="range" id="turb" min="0" max="500" value="300"></label>
+	<label>beam cone° <input type="range" id="cone" min="3" max="30" value="12"></label>
+	<label>guide falloff <input type="range" id="falloff" min="40" max="400" value="130"></label>
+	<label>seed <input type="number" id="seed" value="1" min="1" step="1"> <button id="restart">restart</button></label>
+	<div class="help">fly IN → OUT before hull or energy runs out. WASD / arrows: turn, thrust, retro. Space: drop buoy. R: new random run.</div>
 </div>
+<script src="field.js"></script>
+<script src="sim.js"></script>
+<script src="render.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
