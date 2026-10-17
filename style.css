@@ -1,0 +1,14 @@
+html, body { margin: 0; padding: 0; overflow: hidden; background: #0b0d12; color: #ddd; font-family: sans-serif; }
+#app { display: flex; }
+canvas { display: block; }
+#panel {
+  position: fixed; right: 0; top: 0; width: 300px; height: 100vh;
+  padding: 12px; box-sizing: border-box; overflow-y: auto;
+  background: rgba(20,24,32,0.92); border-left: 1px solid #333;
+}
+#panel h1 { font-size: 16px; margin: 0 0 8px; }
+#panel .group { margin-bottom: 12px; display: flex; flex-direction: column; gap: 6px; }
+#panel label { font-size: 13px; display: flex; align-items: center; gap: 6px; }
+#panel input[type=range] { flex: 1; }
+#panel button { padding: 6px 8px; cursor: pointer; }
+#panel .hint { font-size: 11px; opacity: 0.7; }
