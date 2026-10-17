@@ -170,6 +170,11 @@
 			ctx.font = '600 13px ui-monospace, monospace';
 			ctx.textAlign = 'center';
 			ctx.fillText(isEntry ? 'ENTRY GATE' : 'EXIT GATE', g.x, g.y - g.radius - 12);
+			if (g.tractor) {
+				ctx.fillStyle = 'rgba(157,251,228,0.6)';
+				ctx.font = '11px ui-monospace, monospace';
+				ctx.fillText('-> far universe', g.x, g.y - g.radius - 24);
+			}
 		}
 
 		function drawGuide(sim) {
@@ -264,6 +269,27 @@
 			ctx.restore();
 		}
 
+		let flash = -1;
+
+		function drawJump(sim) {
+			if (sim.ship.status === 'captured' && flash < 0) flash = 0;
+			if (flash < 0) return;
+			flash += 1 / 60;
+			const exit = sim.gates[1];
+			const r = 40 + flash * 420;
+			const a = Math.max(0, 1 - flash / 0.9);
+			ctx.strokeStyle = `rgba(140,255,235,${a * 0.9})`;
+			ctx.lineWidth = 4 * a + 1;
+			ctx.beginPath();
+			ctx.arc(exit.x, exit.y, r, 0, Math.PI * 2);
+			ctx.stroke();
+			ctx.fillStyle = `rgba(200,255,245,${a * 0.35})`;
+			ctx.beginPath();
+			ctx.arc(exit.x, exit.y, r * 0.6, 0, Math.PI * 2);
+			ctx.fill();
+			if (flash > 1.2) flash = -1;
+		}
+
 		function draw(sim, thrust) {
 			time += 1 / 60;
 			if (heatDirty) buildHeat(sim);
@@ -290,6 +316,7 @@
 			if (sim.modes.tracers) drawTracers(sim);
 			for (const g of sim.gates) drawGate(g, time, g.type === 'entry');
 			drawShip(sim, thrust);
+			drawJump(sim);
 			// strain vignette
 			const psy = sim.ship.psy / sim.ship.psyMax;
 			if (psy > 0.35) {
